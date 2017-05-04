@@ -2,7 +2,7 @@
 
 Program ini adalah praktik sederhana penggunaan MVC. Program ini berfungsi untuk mengatur data barang di toko / swalayan secara mudah
 
-*Catatan : Seluruh Button berfungsi (Login, Exit, Save, Ubah, Hapus, Cari), <b> kecuali Button Sign Up yang ada di View Login masih belum dapat difungsikan <b>
+*Catatan : Seluruh Button berfungsi (Login, Exit, Save, Ubah, Hapus, Cari), <b> kecuali Button Sign Up yang ada di View Login masih belum dapat difungsikan </b>
 
 ## Screenshot
 Berikut adalah tampilan program saat dijalankan
