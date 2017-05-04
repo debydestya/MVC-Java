@@ -43,8 +43,13 @@ public class login extends javax.swing.JFrame {
         SignIn = new javax.swing.JButton();
         SignUp = new javax.swing.JButton();
         Exit = new javax.swing.JButton();
+        jPanel3 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        jPanel1 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(360, 300));
+        setSize(new java.awt.Dimension(360, 300));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         tfUname.addActionListener(new java.awt.event.ActionListener() {
@@ -81,6 +86,16 @@ public class login extends javax.swing.JFrame {
             }
         });
         getContentPane().add(Exit, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 190, 70, -1));
+
+        jPanel3.setBackground(new java.awt.Color(45, 248, 248));
+        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 30, 210, 110));
+
+        jPanel2.setBackground(new java.awt.Color(45, 248, 248));
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 150, 210, 80));
+
+        jPanel1.setBackground(new java.awt.Color(253, 230, 230));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 360, 270));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -166,6 +181,9 @@ public class login extends javax.swing.JFrame {
     private javax.swing.JButton SignUp;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JPasswordField tfPass;
     private javax.swing.JTextField tfUname;
     // End of variables declaration//GEN-END:variables

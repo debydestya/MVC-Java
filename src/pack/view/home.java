@@ -108,8 +108,15 @@ public class home extends javax.swing.JFrame {
         txtkode = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
         Tabel1 = new javax.swing.JTable();
+        jPanel2 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        jPanel5 = new javax.swing.JPanel();
+        jPanel6 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(600, 490));
+        setPreferredSize(new java.awt.Dimension(600, 490));
+        setSize(new java.awt.Dimension(600, 490));
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowOpened(java.awt.event.WindowEvent evt) {
                 formWindowOpened(evt);
@@ -119,11 +126,11 @@ public class home extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel1.setText("Admin Toko :");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel2.setText("Data Barang di Toko");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 40, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 30, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel3.setText("Kode Barang");
@@ -145,23 +152,23 @@ public class home extends javax.swing.JFrame {
         jLabel7.setText("Harga");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, -1, -1));
 
-        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel8.setText("Pencarian Berdasarkan Kategori ");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 260, -1, -1));
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, -1, -1));
 
         tfAdmin.setEditable(false);
-        getContentPane().add(tfAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 10, 60, -1));
+        getContentPane().add(tfAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 40, 60, -1));
         getContentPane().add(txtnama, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 110, 300, -1));
         getContentPane().add(txtharga, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 200, 300, -1));
 
-        cbKategoriBrg.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Makanan", "Minuman" }));
+        cbKategoriBrg.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Makanan", "Minuman", "Baranglain" }));
         getContentPane().add(cbKategoriBrg, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, 300, -1));
 
         cbjenis.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pack", "Kardus", "Botol" }));
         getContentPane().add(cbjenis, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 170, 300, -1));
 
-        cbCariKategori.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Makanan", "Minuman" }));
-        getContentPane().add(cbCariKategori, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 260, 90, -1));
+        cbCariKategori.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Makanan", "Minuman", "Baranglain" }));
+        getContentPane().add(cbCariKategori, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 260, 120, -1));
 
         Btn_Simpan.setText("Simpan");
         Btn_Simpan.addActionListener(new java.awt.event.ActionListener() {
@@ -169,7 +176,7 @@ public class home extends javax.swing.JFrame {
                 Btn_SimpanActionPerformed(evt);
             }
         });
-        getContentPane().add(Btn_Simpan, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 80, 90, -1));
+        getContentPane().add(Btn_Simpan, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 80, 90, -1));
 
         Btn_Hapus.setText("Hapus");
         Btn_Hapus.addActionListener(new java.awt.event.ActionListener() {
@@ -177,7 +184,7 @@ public class home extends javax.swing.JFrame {
                 Btn_HapusActionPerformed(evt);
             }
         });
-        getContentPane().add(Btn_Hapus, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 170, 90, -1));
+        getContentPane().add(Btn_Hapus, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 170, 90, -1));
 
         Btn_Cari.setText("Cari");
         Btn_Cari.addActionListener(new java.awt.event.ActionListener() {
@@ -193,7 +200,7 @@ public class home extends javax.swing.JFrame {
                 Btn_KeluarActionPerformed(evt);
             }
         });
-        getContentPane().add(Btn_Keluar, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 200, 90, -1));
+        getContentPane().add(Btn_Keluar, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 200, 90, -1));
 
         Btn_Ubah.setText("Ubah");
         Btn_Ubah.addActionListener(new java.awt.event.ActionListener() {
@@ -201,7 +208,7 @@ public class home extends javax.swing.JFrame {
                 Btn_UbahActionPerformed(evt);
             }
         });
-        getContentPane().add(Btn_Ubah, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 110, 90, -1));
+        getContentPane().add(Btn_Ubah, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 110, 90, -1));
 
         Btn_Bersih.setText("Bersihkan");
         Btn_Bersih.addActionListener(new java.awt.event.ActionListener() {
@@ -209,7 +216,7 @@ public class home extends javax.swing.JFrame {
                 Btn_BersihActionPerformed(evt);
             }
         });
-        getContentPane().add(Btn_Bersih, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 140, 90, -1));
+        getContentPane().add(Btn_Bersih, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 140, 90, -1));
         getContentPane().add(txtkode, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 80, 300, -1));
 
         Tabel1.setModel(new javax.swing.table.DefaultTableModel(
@@ -238,7 +245,22 @@ public class home extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(Tabel1);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, 540, 180));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, 540, 160));
+
+        jPanel2.setBackground(new java.awt.Color(143, 236, 217));
+        jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 70, 130, 170));
+
+        jPanel3.setBackground(new java.awt.Color(143, 234, 214));
+        jPanel3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 430, 170));
+
+        jPanel5.setBackground(new java.awt.Color(171, 242, 242));
+        jPanel5.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        getContentPane().add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 560, 220));
+
+        jPanel6.setBackground(new java.awt.Color(255, 204, 204));
+        getContentPane().add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 580, 470));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -342,6 +364,10 @@ public class home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField tfAdmin;
     private javax.swing.JTextField txtharga;
